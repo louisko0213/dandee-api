@@ -33,10 +33,9 @@ exports.create = (req, res) => {
 
 exports.findAll = (req, res) => {
   console.log('qq');
-  const title = req.query.title;
-  let condition = title ? {title: {[ Op.like ]: `%${ title }%`}} : null;
-  console.log(title);
-  User.findOne({where: {}})
+  const position = req.query.position;
+  let condition = position ? {position: {[ Op.like ]: `%${ position }%`}} : null;
+  User.findOne({where: condition})
     .then(data => {
       console.log(data);
       res.send(data);
