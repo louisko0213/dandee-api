@@ -40,7 +40,7 @@ module.exports = {
         unique: true,
         allowNull: false,
       },
-      washCoopon: {
+      washCoupon: {
         type: Sequelize.INTEGER,
         allowNull: false,
         defaultValue: 0

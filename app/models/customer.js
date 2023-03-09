@@ -26,10 +26,6 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING(125),
       allowNull: true
     },
-    brand: {
-      type: Sequelize.STRING(45),
-      allowNull: false
-    },
     size: {
       type: Sequelize.STRING(45),
       allowNull: false
@@ -38,16 +34,12 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING(45),
       allowNull: false
     },
-    size: {
-      type: Sequelize.STRING(45),
-      allowNull: false
-    },
     plateNumber: {
       type: Sequelize.INTEGER,
       unique: true,
       allowNull: false,
     },
-    washCoopon: {
+    washCoupon: {
       type: Sequelize.INTEGER,
       allowNull: false,
       defaultValue: 0
